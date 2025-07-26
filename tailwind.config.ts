@@ -52,6 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// TruMoto Custom Colors
+				'electric-blue': 'hsl(var(--electric-blue))',
+				'electric-green': 'hsl(var(--electric-green))',
+				'warning-orange': 'hsl(var(--warning-orange))',
+				'speed-display': 'hsl(var(--speed-display))',
+				'data-value': 'hsl(var(--data-value))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +90,37 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-glow': {
+					'0%, 100%': {
+						opacity: '1',
+						transform: 'scale(1)'
+					},
+					'50%': {
+						opacity: '0.8',
+						transform: 'scale(1.05)'
+					}
+				},
+				'speed-update': {
+					'0%': {
+						transform: 'scale(1)',
+						filter: 'brightness(1)'
+					},
+					'50%': {
+						transform: 'scale(1.02)',
+						filter: 'brightness(1.2)'
+					},
+					'100%': {
+						transform: 'scale(1)',
+						filter: 'brightness(1)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+				'speed-update': 'speed-update 0.3s ease-out'
 			}
 		}
 	},
